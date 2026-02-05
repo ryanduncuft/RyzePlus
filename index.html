@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net https://www.gstatic.com https://www.google.com https://accounts.google.com https://apis.google.com https://www.recaptcha.net https://www.paypal.com https://www.sandbox.paypal.com; connect-src 'self' https://gist.githubusercontent.com https://*.googleapis.com wss://*.googleapis.com https://www.gstatic.com https://www.google.com https://www.recaptcha.net https://www.paypal.com https://www.sandbox.paypal.com; frame-src https://www.paypal.com https://www.sandbox.paypal.com https://www.google.com https://accounts.google.com https://apis.google.com https://www.recaptcha.net https://www.gstatic.com; form-action 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>RyzePlus — Music Membership Platform</title>
+    <meta name="description" content="RyzePlus is a music membership platform where fans stream or download every release, unlock studio vault content, and buy singles anytime.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#0f141a">
+    <meta property="og:title" content="RyzePlus — Music Membership Platform">
+    <meta property="og:description" content="Stream or download every release, unlock studio vault content, and buy singles anytime with RyzePlus.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RyzePlus">
+    <meta property="og:image" content="https://i1.sndcdn.com/artworks-G2s51x9F69y97egV-xEQxZg-t500x500.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RyzePlus — Music Membership Platform">
+    <meta name="twitter:description" content="Stream or download every release, unlock studio vault content, and buy singles anytime with RyzePlus.">
+    <meta name="twitter:image" content="https://i1.sndcdn.com/artworks-G2s51x9F69y97egV-xEQxZg-t500x500.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="siteHeader"></header>
+
+    <main id="main">
+      <div class="status-toast" id="statusToast" role="status" aria-live="polite"></div>
+
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <p class="eyebrow">Creator-backed member access</p>
+              <h1>All music. Studio vault. Exclusive drops.</h1>
+              <p class="lead">RyzePlus is a membership platform where fans stream or download every release, unlock vlogs and studio footage, and buy individual tracks anytime.</p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+              <a href="plans.html" class="btn btn-primary btn-lg">Start All-Access</a>
+                <a href="music.html" class="btn btn-outline-dark btn-lg">Explore releases</a>
+              </div>
+              <div class="hero-stats mt-4">
+                <div>
+                  <span class="stat-number">24+</span>
+                  <span class="stat-label">Exclusive releases</span>
+                </div>
+                <div>
+                  <span class="stat-number">120+</span>
+                  <span class="stat-label">Behind-the-scenes clips</span>
+                </div>
+                <div>
+                  <span class="stat-number">4K</span>
+                  <span class="stat-label">Member downloads</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-card">
+                <div class="hero-card-top">
+                  <div class="hero-album">
+                    <div class="album-art"></div>
+                    <div>
+                      <p class="mb-1">Latest Drop</p>
+                      <h3 class="mb-0">Midnight Heights</h3>
+                      <span class="text-muted">Exclusive to members for 2 weeks</span>
+                    </div>
+                  </div>
+                  <a class="btn btn-outline-light" href="music.html">Open preview</a>
+                </div>
+                <div class="hero-card-body">
+                  <div class="badge-row">
+                    <span class="badge badge-soft">Studio vlog</span>
+                    <span class="badge badge-soft">Tour diary</span>
+                    <span class="badge badge-soft">Stem packs</span>
+                  </div>
+                  <p class="mb-0">Dive into studio sessions, lyric breakdowns, early demos, and more with full HD video access.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps" id="how">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">How it works</p>
+              <h2>Membership built for superfans</h2>
+              <p class="text-muted">Instant access across audio, video, and the full vault.</p>
+            </div>
+            <a href="plans.html" class="btn btn-outline-dark">See membership</a>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="step-card hover-lift" data-reveal="true">
+                <div class="step-index">01</div>
+                <h3>Join the vault</h3>
+                <p>Start a monthly or yearly plan to unlock every release and behind-the-scenes drop.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="step-card hover-lift" data-reveal="true">
+                <div class="step-index">02</div>
+                <h3>Stream &amp; save</h3>
+                <p>Play the full catalog, save favorites, and build a personal library instantly.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="step-card hover-lift" data-reveal="true">
+                <div class="step-index">03</div>
+                <h3>Get exclusive drops</h3>
+                <p>Weekly content, early release access, and bonus packs straight from the studio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vault" id="features">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">What you get</p>
+              <h2>Every feature in one place</h2>
+              <p class="text-muted">Designed to keep superfans closer to the music.</p>
+            </div>
+            <a href="account.html" class="btn btn-outline-dark">Open dashboard</a>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Library</span>
+              <h4>Saved tracks + offline lists</h4>
+              <p class="text-muted">Build a personal vault and export your saved releases any time.</p>
+            </div>
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Creator</span>
+              <h4>Direct updates from the studio</h4>
+              <p class="text-muted">Vlogs, early drops, and creator notes inside the member vault.</p>
+            </div>
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Billing</span>
+              <h4>PayPal subscriptions</h4>
+              <p class="text-muted">Transparent pricing with monthly, yearly, and supporter plans.</p>
+            </div>
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Security</span>
+              <h4>Email verification + recovery</h4>
+              <p class="text-muted">Secure logins with password resets and verified accounts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vault" id="vault">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Member Vault</p>
+              <h2>Beyond the music</h2>
+              <p class="text-muted">Behind-the-scenes videos, unreleased demos, and creative breakdowns updated weekly.</p>
+            </div>
+            <a href="plans.html" class="btn btn-outline-dark">Unlock the vault</a>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="vault-card hover-lift" data-reveal="true">
+                <h3>Studio Sessions</h3>
+                <p>Watch raw studio takes, live edits, and production walkthroughs.</p>
+                <span class="pill">Video series</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="vault-card hover-lift" data-reveal="true">
+                <h3>Tour Diaries</h3>
+                <p>Vlogs from the road with live performances and fan moments.</p>
+                <span class="pill">Weekly drops</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="vault-card hover-lift" data-reveal="true">
+                <h3>Creative Vault</h3>
+                <p>Lyric breakdowns, demo versions, and alternate covers.</p>
+                <span class="pill">Archive access</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="creator">
+        <div class="container">
+          <div class="creator-grid">
+            <div>
+              <p class="eyebrow">Creator first</p>
+              <h2>Direct support, real connection</h2>
+              <p class="text-muted">RyzePlus keeps fans and creators in one place with all-access membership, transparent drops, and secure payments.</p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-primary" href="plans.html">Join All-Access</a>
+                <a class="btn btn-ghost" href="music.html">View music</a>
+              </div>
+            </div>
+            <div class="creator-panel hover-lift" data-reveal="true">
+              <h3>Member perks</h3>
+              <ul>
+                <li>Early access to new releases</li>
+                <li>Full-res downloads and stems</li>
+                <li>Private live streams and Q&amp;As</li>
+                <li>Merch drops and exclusive bundles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="music" id="playlists">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Curated</p>
+              <h2>Playlists for every mood</h2>
+              <p class="text-muted">Hand-picked by the artist with fresh rotations weekly.</p>
+            </div>
+            <a href="music.html" class="btn btn-outline-dark">Explore music</a>
+          </div>
+          <div class="playlist-grid">
+            <article class="playlist-card hover-lift" data-reveal="true">
+              <div class="cover"></div>
+              <div>
+                <h4>Late Night Drive</h4>
+                <p class="playlist-meta">12 tracks · Smooth energy</p>
+              </div>
+              <a href="music.html" class="btn btn-ghost">Open playlist</a>
+            </article>
+            <article class="playlist-card hover-lift" data-reveal="true">
+              <div class="cover"></div>
+              <div>
+                <h4>Studio Focus</h4>
+                <p class="playlist-meta">18 tracks · Minimal + airy</p>
+              </div>
+              <a href="music.html" class="btn btn-ghost">Open playlist</a>
+            </article>
+            <article class="playlist-card hover-lift" data-reveal="true">
+              <div class="cover"></div>
+              <div>
+                <h4>Tour Energy</h4>
+                <p class="playlist-meta">15 tracks · Live-ready</p>
+              </div>
+              <a href="music.html" class="btn btn-ghost">Open playlist</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured" id="featured">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Featured drops</p>
+              <h2>Latest releases</h2>
+              <p class="text-muted">Preview the latest music. Members get full downloads.</p>
+            </div>
+            <a href="music.html" class="btn btn-outline-dark">View all music</a>
+          </div>
+          <div id="musicGrid" class="row g-3"></div>
+          <div id="noResults" class="text-center text-muted mt-4 d-none">No tracks found.</div>
+        </div>
+      </section>
+
+      <section class="compare" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Member voices</p>
+              <h2>What superfans are saying</h2>
+              <p class="text-muted">Real feedback from the RyzePlus community.</p>
+            </div>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card hover-lift" data-reveal="true">
+              <p>“The vault drops feel like a private backstage pass. It’s the only membership I keep active.”</p>
+              <div class="testimonial-meta">
+                <div class="testimonial-avatar">AF</div>
+                <div>
+                  <strong>Aria F.</strong>
+                  <div>All-Access member</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card hover-lift" data-reveal="true">
+              <p>“I save tracks every week and export my library before trips. The flow is super clean.”</p>
+              <div class="testimonial-meta">
+                <div class="testimonial-avatar">JM</div>
+                <div>
+                  <strong>Jordan M.</strong>
+                  <div>All-Access member</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card hover-lift" data-reveal="true">
+              <p>“All-Access is worth it for the early drops. Feels like the artist is right there.”</p>
+              <div class="testimonial-meta">
+                <div class="testimonial-avatar">LS</div>
+                <div>
+                  <strong>Leah S.</strong>
+                  <div>All-Access member</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta-inner">
+            <div class="row align-items-center g-3">
+              <div class="col-lg-7">
+              <h2>Ready for All-Access?</h2>
+              <p class="text-muted">One subscription unlocks unlimited streaming, downloads, and exclusive creator content.</p>
+              </div>
+              <div class="col-lg-5 d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-light btn-lg" href="plans.html">Start All-Access</a>
+                <a class="btn btn-ghost btn-lg" href="music.html">Browse music</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="siteFooter"></footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-check-compat.js"></script>
+    <script defer src="js/runtime-config.js"></script>
+<script defer src="js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net https://www.gstatic.com https://www.google.com https://accounts.google.com https://apis.google.com https://www.recaptcha.net https://www.paypal.com https://www.sandbox.paypal.com; connect-src 'self' https://gist.githubusercontent.com https://*.googleapis.com wss://*.googleapis.com https://www.gstatic.com https://www.google.com https://www.recaptcha.net https://www.paypal.com https://www.sandbox.paypal.com; frame-src https://www.paypal.com https://www.sandbox.paypal.com https://www.google.com https://accounts.google.com https://apis.google.com https://www.recaptcha.net https://www.gstatic.com; form-action 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>RyzePlus — Music Library</title>
+    <meta name="description" content="Browse the RyzePlus music library for Ryze Tha Kidd releases, singles, albums, and collabs. Stream previews and download tracks.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#0f141a">
+    <meta property="og:title" content="RyzePlus — Music Library">
+    <meta property="og:description" content="Browse releases, stream previews, and download tracks from the RyzePlus music library.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RyzePlus">
+    <meta property="og:image" content="https://i1.sndcdn.com/artworks-G2s51x9F69y97egV-xEQxZg-t500x500.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RyzePlus — Music Library">
+    <meta name="twitter:description" content="Browse releases, stream previews, and download tracks from the RyzePlus music library.">
+    <meta name="twitter:image" content="https://i1.sndcdn.com/artworks-G2s51x9F69y97egV-xEQxZg-t500x500.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="music">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="siteHeader"></header>
+
+    <main id="main">
+      <div class="status-toast" id="statusToast" role="status" aria-live="polite"></div>
+
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Music Library</p>
+          <h1>Buy a single or stream everything</h1>
+          <p class="text-muted">All-access members get full vault access. Non-members can buy single tracks instantly.</p>
+        </div>
+      </section>
+
+      <section class="vault">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Curated playlists</p>
+              <h2>Playlists built by the artist</h2>
+              <p class="text-muted">Updated weekly with new drops and tour favorites.</p>
+            </div>
+            <a href="plans.html" class="btn btn-outline-dark">Unlock All-Access</a>
+          </div>
+          <div class="playlist-grid">
+            <article class="playlist-card hover-lift" data-reveal="true">
+              <div class="cover"></div>
+              <div>
+                <h4>After Hours</h4>
+                <p class="playlist-meta">10 tracks · Atmospheric</p>
+              </div>
+              <a href="#music" class="btn btn-ghost">Play now</a>
+            </article>
+            <article class="playlist-card hover-lift" data-reveal="true">
+              <div class="cover"></div>
+              <div>
+                <h4>Road Tape</h4>
+                <p class="playlist-meta">14 tracks · Tour energy</p>
+              </div>
+              <a href="#music" class="btn btn-ghost">Play now</a>
+            </article>
+            <article class="playlist-card hover-lift" data-reveal="true">
+              <div class="cover"></div>
+              <div>
+                <h4>Studio Diary</h4>
+                <p class="playlist-meta">16 tracks · Work mode</p>
+              </div>
+              <a href="#music" class="btn btn-ghost">Play now</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="music" class="music">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Library</p>
+              <h2>All releases</h2>
+              <p class="text-muted">Search, filter, and save your favorites.</p>
+            </div>
+          </div>
+
+          <div class="catalog-stats" id="catalogStats"></div>
+
+          <div class="music-toolbar">
+            <div class="music-controls">
+              <div class="btn-group">
+                <button id="viewToggleBtn" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Showing: Latest 8
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item view-option active" href="#" data-show="latest">Latest 8</a></li>
+                  <li><a class="dropdown-item view-option" href="#" data-show="all">All releases</a></li>
+                </ul>
+              </div>
+              <div>
+                <select id="sortSelect" class="form-select">
+                  <option value="latest">Sort: Newest</option>
+                  <option value="oldest">Sort: Oldest</option>
+                  <option value="title">Sort: Title A–Z</option>
+                </select>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="savedOnlyToggle">
+                <label class="form-check-label" for="savedOnlyToggle">Saved only</label>
+              </div>
+            </div>
+            <div class="search-wrap">
+              <input id="searchInput" type="search" class="form-control" placeholder="Search tracks, albums, or artists">
+              <button id="searchClear" class="btn btn-outline-dark">Clear</button>
+            </div>
+          </div>
+
+          <div class="results-count" id="resultsCount"></div>
+
+          <div class="filter-row">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="single">Singles</button>
+            <button class="filter-chip" data-filter="album">Albums</button>
+            <button class="filter-chip" data-filter="ep">EPs</button>
+            <button class="filter-chip" data-filter="collab">Collabs</button>
+          </div>
+
+          <div id="musicGrid" class="row g-3"></div>
+          <div id="noResults" class="text-center text-muted mt-4 d-none">No tracks found.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="siteFooter"></footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-check-compat.js"></script>
+    <script defer src="js/runtime-config.js"></script>
+<script defer src="js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+

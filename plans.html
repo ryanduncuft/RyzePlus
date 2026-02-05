@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net https://www.gstatic.com https://www.google.com https://accounts.google.com https://apis.google.com https://www.recaptcha.net https://www.paypal.com https://www.sandbox.paypal.com; connect-src 'self' https://gist.githubusercontent.com https://*.googleapis.com wss://*.googleapis.com https://www.gstatic.com https://www.google.com https://www.recaptcha.net https://www.paypal.com https://www.sandbox.paypal.com; frame-src https://www.paypal.com https://www.sandbox.paypal.com https://www.google.com https://accounts.google.com https://apis.google.com https://www.recaptcha.net https://www.gstatic.com; form-action 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>RyzePlus — Membership</title>
+    <meta name="description" content="Explore RyzePlus membership plans with all-access streaming, downloads, and exclusive vault content.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#0f141a">
+    <meta property="og:title" content="RyzePlus — Membership">
+    <meta property="og:description" content="All-access membership unlocks streaming, downloads, and exclusive vault content with RyzePlus.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="RyzePlus">
+    <meta property="og:image" content="https://i1.sndcdn.com/artworks-G2s51x9F69y97egV-xEQxZg-t500x500.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RyzePlus — Membership">
+    <meta name="twitter:description" content="All-access membership unlocks streaming, downloads, and exclusive vault content with RyzePlus.">
+    <meta name="twitter:image" content="https://i1.sndcdn.com/artworks-G2s51x9F69y97egV-xEQxZg-t500x500.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-page="plans">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="siteHeader"></header>
+
+    <main id="main">
+      <div class="status-toast" id="statusToast" role="status" aria-live="polite"></div>
+
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Membership</p>
+          <h1>One plan. Everything included.</h1>
+          <p class="text-muted">All-access membership unlocks every release, vault update, and download in one simple subscription.</p>
+        </div>
+      </section>
+
+      <section id="plans" class="plans">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Membership</p>
+              <h2>All-Access Subscription</h2>
+              <p class="text-muted">Powered by PayPal subscriptions.</p>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-lg-6">
+              <div class="plan-card featured hover-lift" data-reveal="true">
+                <div>
+                  <h3>All-Access</h3>
+                  <p class="price">$7.99 <span class="text-muted fs-6">/ month</span></p>
+                  <p class="text-muted">One subscription. Everything unlocked.</p>
+                  <ul class="plan-list">
+                    <li>Unlimited streaming + downloads</li>
+                    <li>Full BTS vault and weekly drops</li>
+                    <li>Early release access + bonus packs</li>
+                    <li>Priority support + member perks</li>
+                  </ul>
+                </div>
+                <button class="btn btn-dark w-100 plan-cta" data-plan="all">Start All-Access</button>
+                <div class="plan-checkout" id="paypal-plan-all"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="plan-card hover-lift" data-reveal="true">
+                <div>
+                  <h3>What’s included</h3>
+                  <p class="text-muted">Everything the artist releases, in one place.</p>
+                  <ul class="plan-list">
+                    <li>Studio sessions + tour diaries</li>
+                    <li>Stem packs and exclusive edits</li>
+                    <li>Saved library + exports</li>
+                    <li>Member-only community drops</li>
+                  </ul>
+                </div>
+                <a class="btn btn-primary w-100" href="music.html">Explore the library</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vault">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Membership highlights</p>
+              <h2>Everything included</h2>
+              <p class="text-muted">All-access includes every release, vault update, and perk.</p>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Streaming</span>
+              <h4>Unlimited listening</h4>
+              <p class="text-muted">Full catalog access across all releases and singles.</p>
+            </div>
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Vault</span>
+              <h4>Weekly BTS drops</h4>
+              <p class="text-muted">Studio sessions, tour diaries, and creative breakdowns.</p>
+            </div>
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Downloads</span>
+              <h4>FLAC files</h4>
+              <p class="text-muted">High-quality exports and bonus packs for members.</p>
+            </div>
+            <div class="feature-card hover-lift" data-reveal="true">
+              <span class="feature-tag">Support</span>
+              <h4>Priority support</h4>
+              <p class="text-muted">Fast responses for billing and account help.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Compare</p>
+              <h2>All-Access includes everything</h2>
+              <p class="text-muted">No tiers. No limits. One subscription for the full experience.</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>All-Access</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Full catalog streaming</td>
+                  <td>Included</td>
+                </tr>
+                <tr>
+                  <td>High-res downloads</td>
+                  <td>Included + bonus packs</td>
+                </tr>
+                <tr>
+                  <td>Behind-the-scenes vault</td>
+                  <td>Included</td>
+                </tr>
+                <tr>
+                  <td>Early release access</td>
+                  <td>Priority</td>
+                </tr>
+                <tr>
+                  <td>Community perks</td>
+                  <td>Member-only drops + community perks</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">FAQ</p>
+              <h2>Common questions</h2>
+              <p class="text-muted">Everything you need to know before joining.</p>
+            </div>
+          </div>
+          <details>
+            <summary>Can I cancel anytime?</summary>
+            <p class="text-muted mt-2">Yes. Manage or cancel your plan directly in the PayPal billing portal at any time.</p>
+          </details>
+          <details>
+            <summary>Do members keep downloads?</summary>
+            <p class="text-muted mt-2">Downloads remain in your personal library as long as your membership is active.</p>
+          </details>
+          <details>
+            <summary>Is there a free trial?</summary>
+            <p class="text-muted mt-2">Not yet. We keep pricing transparent and unlock instant access on day one.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="siteFooter"></footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-check-compat.js"></script>
+    <script defer src="js/runtime-config.js"></script>
+<script defer src="js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
